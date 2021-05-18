@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.main-container{
+    background-color:#f6f4e6 ;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+    header{
+        background-color: #0f4c75;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        height: 11em;
+     
+    }
+        .logo{
+            flex: 1 1 6em;
+        }
+            .logo>img{
+                width: 100%;
+                border-radius: 1.5em;
+                padding: .5em;
+           
+            }
+        .nombre{
+            flex: 2 1 auto;
+        }
+            .nombre>h1{
+                font-size:3.5rem;
+                font-family: 'IBM Plex Serif';
+                color: white;
+                text-align:center;
+            }
+    
+    main{
+        background-color: #e0ece4;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 100%;
+    }
+      form{
+          padding-top: 2em;
+          padding-bottom: 1em;
+          margin-top: 2em;
+         width: 40%;
+         display: flex;
+         flex-direction: column;
+         flex-wrap: nowrap;
+         justify-content: center;
+         margin-bottom:3.5em;
+         
+      }
+      form>h3{
+          font-size:2.5rem;
+          text-align: center;
+      }
+      label{
+          font-size:1.6rem;
+          margin-bottom: .5;
+          
+      }
+      input{
+          width: 100%;
+          border-radius: .5em;
+          border: 1px solid #318fb5;
+          padding: 1em;
+      }
+      .btn-ingresar{
+        margin-top: 1em;
+        border-radius: .5em;
+        padding: 1em;
+        flex: 1 1 auto;
+        width: 100%;
+        border: 1px solid #318fb5;
+      }
+
+        .btn-ingresar:hover{
+        color:white;
+        background-color:#318fb5 ;
+        margin-top: 1em;
+        border-radius: .5em;
+  
+      }
+      form a{
+          margin-top: 1.5em;
+          font-size: 1rem;
+        text-decoration:none;
+        display: inline-block;
+        color: #411f1f;
+      }
+      
+      form a:hover{
+          color:black;
+      }
+    footer{
+        background-color: #222831;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding-top: 1.5em;
+    }
+        .autores{
+            margin-top: 1.5em;
+            margin-bottom: 1.5em;
+            font-size: 1rem;
+            color: white;
+            text-align: center;
+        }
+
+@media all and (max-width: 730px){
+    header{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 100%;
+    }
+        .logo{
+            width: 100%;
+        
+        }
+            .logo>img{
+                width: 100%;
+                border-radius: 2em;
+            }
+        .nombre{
+            width: 100%;
+            
+        }
+}

@@ -1,0 +1,99 @@
+
+.header-container{
+    background-color:#f6f4e6 ;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+    .main-header{
+        background-color: #0f4c75;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        height: 11em;
+    }
+        
+        .logo-inicial{
+            flex: 1 1 6em;
+        }
+            .logo-inicial>img{
+                width: 100%;
+                border-radius: 1.5em;
+                padding: .5em;
+            }
+            .logo-inicial img:hover{
+                border:.1em solid whitesmoke;
+            }
+        .nombre-academia{
+            flex: 2 1 auto;
+        }
+        .nombre-academia>h1{
+            font-size:3.5rem;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            text-align:center;
+        }
+            
+        .social{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+            .foto-perfil{
+                padding-right: .5em;
+                padding-left: .5em;
+                width: 5em;
+                height: 4em;
+                border-radius: 1em;
+            }
+                .foto-perfil>img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 1em;
+                }
+            .enlaces a{
+                padding: .5em;
+                text-decoration: none;
+                color: white;
+                font-size: 1.1rem;
+            }
+            .enlaces a:hover{
+                border-bottom:.1em solid whitesmoke;
+            }
+            /*animación*/
+            .nombre-academia>h1{
+                animation-name: animacion;
+                animation-duration: 6s;
+            }
+            @keyframes animacion{
+                0%   {color: whitesmoke;}
+                25%  {color: #1a1a2e;}
+                50%  {color: #ff7171;}
+                100% {color: whitesmoke;}
+            }
+       
+        
+
+@media all and (max-width: 740px){
+    .main-header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    }
+        .logo-inicial{
+        width: 100%;
+                    
+        }
+        .logo-inicial>img{
+        width: 100%;
+        border-radius: 2em;
+        
+        }
+        .nombre-academia{
+        width: 100%;
+                        
+        }
+}

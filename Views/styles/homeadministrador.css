@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+@media all and (min-width: 450px ){
+}
+
+
+    
+@media all and (min-width: 576px) {
+}
+
+
+@media all and  (min-width: 768px) {
+}
+
+
+@media all and (min-width: 992px) {
+    
+}
+
+@media all and (min-width: 1200px) {
+    .contenedor-principal{
+        display: flex;
+        flex-wrap: row;
+        flex-wrap: nowrap;
+    }
+        .contenedor-izquierdo{
+            width:40em;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            /*border: 3px solid red;*/
+            background-color: #e0ece4;
+        }
+    
+                .crud-profesores{
+                    /*background-color: blueviolet;
+                    border: 2px solid firebrick;*/
+                    
+                }
+                .crud-cursos{
+                    /*background-color: cadetblue;
+                    border: 2px solid gray;*/
+                    
+                }
+                .crud-matriculacion{
+                    /*background-color: chartreuse;
+                    border: 2px solid fuchsia;*/
+                    
+                }
+                .crud-tareas{
+                    /*background-color: crimson;
+                    border: 2px solid forestgreen;*/
+                    
+                }
+                .crud-profesores ul li,.crud-cursos ul li,.crud-matriculacion ul li,.crud-tareas ul li{
+                    list-style-type: none;
+                }
+                .crud-profesores>h3,.crud-cursos>h3,.crud-matriculacion>h3,.crud-tareas>h3{
+                    text-align: center;
+                    padding-top: 1.5em;
+                }
+                .nav-profesores ul, .nav-cursos ul,.nav-matriculacion ul,.nav-tareas ul{
+                    padding-left: 3em;
+                }
+                .nav-profesores ul li, .nav-cursos ul li,.nav-matriculacion ul li,.nav-tareas ul li{
+                    margin-top: 2.5em;
+                    margin-bottom:1.5em;
+                }
+                .nav-profesores ul li a, .nav-cursos ul li a,.nav-matriculacion ul li a,.nav-tareas ul li a{
+                    color: black;
+                }
+                .nav-profesores ul li a:hover, .nav-cursos ul li a:hover,.nav-matriculacion ul li a:hover,.nav-tareas ul li a:hover{
+                    border-bottom:.3em solid #0f4c75;
+                }
+
+                
+
+
+
+
+
+
+    
+        .contenedor-central{
+            background-color:whitesmoke;
+            width: 100%;
+            /*background-color: blue;*/
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            /*border: 10px solid red;*/
+        }
+            .reporte-xcurso{
+               /* background-color: saddlebrown;
+                border: 2px solid black;*/
+                height: 100%;
+                display: flex;
+                flex-direction:row;
+                flex-wrap: wrap;
+              
+            }
+                .curso{
+                    /*background-color: fuchsia;*/
+                     height: 10.5em;
+                     width: 10em;
+                     /*border: 2px solid black;*/
+                     margin-top:4.5em;
+                     margin-left: 9em;
+                     margin-bottom: .5em;
+                     text-align: center;
+                     border-radius: .5em;
+                }
+                    .curso a img{
+                        width:100%;
+                        border-radius: .5em;
+                    }
+                    .curso:hover{
+                        border:.3em solid #0f4c75;
+                    }
+
+            .utilidades{
+                /*background-color: seagreen;
+                border: 6px solid rebeccapurple;*/
+                height: 100%;
+                display: flex;
+                flex-direction:row;
+                flex-wrap: wrap;
+            }
+                .grupo{
+                   /* background-color: gray;*/
+                    height: 7.7em;
+                    width: 10em;
+                    /*border: 2px solid black;*/
+                    margin-top:4.5em;
+                    margin-left: 9em;
+                    margin-bottom: .5em;
+                    text-align: center;
+                    border-radius: .5em;
+                    
+                }
+                
+                .grupo a img{
+                    width:100%;
+                    height: 6em;
+                    border-radius: .5em;
+                }
+                .grupo:hover{
+                    border: .2em solid #0f4c75;
+                }
+                hr{
+                    border:.1em solid #0f4c75;
+                }
+}

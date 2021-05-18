@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.main-container{
+    background-color:whitesmoke ;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100%;
+}
+    .mensaje>h1{
+        padding-top: .2em;
+        text-align: center;
+        color: black;
+        font-size:2.5rem ;
+    }
+   
+      form{
+          padding-top: 0;
+          padding-bottom: 0;
+          margin-top: 1em;
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         flex-wrap: nowrap;
+         justify-content: center;
+         margin-bottom: 0;
+         
+      }
+      label{
+          font-size:1rem;
+          margin-bottom: 0;
+          margin-top: .1em;
+          
+      }
+      input{
+          width: 100%;
+          border-radius: .5em;
+          border: 1px solid #318fb5;
+          padding: 1em;
+      }
+      input:focus{
+        border-radius: .5em;
+        border: 3px solid #318fb5;
+      }
+      .btn-ingresar{
+        margin-top: 1.5em;
+        border-radius: .5em;
+        flex: 1 1 auto;
+        width: 100%;
+        border: .1em solid #318fb5;
+      }
+
+        .btn-ingresar:hover{
+        color:white;
+        background-color:#318fb5 ;
+        margin-top: 1.5em;
+        border-radius: .5em;
+  
+      }
+      form a{
+          margin-top: 1.5em;
+          font-size: 1rem;
+        text-decoration:none;
+        display: inline-block;
+        color: #411f1f;
+      }
+      
+      form a:hover{
+          color:black;
+      }
+  
+
+
+
+@media all and (max-width: 730px){
+    header{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 100%;
+    }
+        .logo{
+            width: 100%;
+        
+        }
+            .logo>img{
+                width: 100%;
+                border-radius: 2em;
+            }
+        .nombre{
+            width: 100%;
+            
+        }
+}
